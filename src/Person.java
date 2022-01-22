@@ -3,6 +3,24 @@ public class Person {
     private float heightInFt = 0;
     private float weightInKgs = 0;
     private int age = 0;
+    private char gender;
+    private Head head;
+
+    public char getGender() {
+        return gender;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
+    public Head getHead() {
+        return head;
+    }
+
+    public void setHead(Head head) {
+        this.head = head;
+    }
 
     public String getName() {
         return name;
@@ -41,5 +59,6 @@ public class Person {
         System.out.println("Age: " +age);
         System.out.println("Height: " +heightInFt);
         System.out.println("Weight: " +weightInKgs);
+        head.printDetails();
     }
 }
