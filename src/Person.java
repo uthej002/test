@@ -1,7 +1,7 @@
 public class Person {
     private String name = null;
-    private int height = 0;
-    private int weight = 0;
+    private float heightInFt = 0;
+    private float weightInKgs = 0;
     private int age = 0;
 
     public String getName() {
@@ -12,20 +12,20 @@ public class Person {
         this.name = name;
     }
 
-    public int getHeight() {
-        return height;
+    public float getHeight() {
+        return heightInFt;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
+    public void setHeight(float height) {
+        this.heightInFt = height;
     }
 
-    public int getWeight() {
-        return weight;
+    public float getWeight() {
+        return weightInKgs;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public void setWeight(float weight) {
+        this.weightInKgs = weight;
     }
 
     public int getAge() {
@@ -34,5 +34,12 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+    public void printDetails() {
+        System.out.println("A new person is created, below are his details:");
+        System.out.println("Name: " +name);
+        System.out.println("Age: " +age);
+        System.out.println("Height: " +heightInFt);
+        System.out.println("Weight: " +weightInKgs);
     }
 }
