@@ -2,6 +2,15 @@ public class Head {
     private boolean hair;
     private String eyeColor;
     private boolean spectacles;
+    private boolean facialHair;
+
+    public boolean isFacialHair() {
+        return facialHair;
+    }
+
+    public void setFacialHair(boolean facialHair) {
+        this.facialHair = facialHair;
+    }
 
     public boolean isHair() {
         return hair;
@@ -28,8 +37,9 @@ public class Head {
     }
 
     public void printDetails() {
-            System.out.println("bald?: " +hair);
+        System.out.println("bald?: " +hair);
         System.out.println("Eye color: " +eyeColor);
         System.out.println("wearing spectacles: " +spectacles);
+        System.out.println("facial hair: " +facialHair);
     }
 }

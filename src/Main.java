@@ -6,6 +6,7 @@ public class Main {
         head.setHair(false);
         head.setEyeColor("brown");
         head.setSpectacles(true);
+        head.setFacialHair(true);
         kevin.setName("Kevin");
         kevin.setAge(24);
         kevin.setHeight(5.6f);
